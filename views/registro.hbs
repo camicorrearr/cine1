@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Chaplin</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="registro.css">
+    
+</head>
+<body>
+    {{> menu }}
+    <div class="container-fluid mt-5 ms-5">
+    <div class="row justify-content-center">
+        <div class="col-5 formulario">
+            <h2 class="text-center">Registro</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su email">
+                </div>
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
+                    <label for="fecha" class="form-label">Fecha de nacimiento</label>
+
+                    <input type="text" class="form-control" id="datepicker" placeholder="Selecciona una fecha">
+
+                <div class="mt-5 d-flex justify-content-center">
+                    <button type="submit" class="boton_enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+     <script>
+  $(document).ready(function() {
+    $('#datepicker').datepicker({
+      format: 'mm/dd/yyyy', // Cambia el formato según lo necesites
+      autoclose: true
+    })
+  });
+</script>
+     <script src="scripts.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
